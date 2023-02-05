@@ -53,6 +53,9 @@ function clickButton() {
             } else if(buttons[i].classList.contains('Pi')) {
                 insertPi();
                 updateDisplay();
+            } else if (buttons[i].classList.contains('Round')) {
+                Round(displayValue);
+                updateDisplay();
             }
         }
     )}
@@ -200,4 +203,7 @@ function ln(num){
 }
 function insertPi(){
     displayValue = 3.14;
+}
+function Round(num){
+    return displayValue = Math.round(num);
 }
