@@ -20,6 +20,7 @@ html {
     border-radius: 4px;
     display: grid;
     grid-template-columns: repeat(4, 100px);
+    /* repeat(x, 80px) x was changed to 6 to add the sixth row for my new buttons. */
     grid-template-rows: minmax(100px, auto) repeat(6, 80px);
     gap: 2px;
 }
@@ -108,7 +109,7 @@ button {
 .percent:active {
     background-color: rgb(123, 189, 255);
 }
-
+/*.other and .other:active are new classes that hold the color for the buttons using the other class and when that button is pressed.*/
 .other{
     background-color: rgb(240, 9, 9);
 }
